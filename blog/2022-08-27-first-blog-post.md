@@ -2,7 +2,7 @@
 slug: Upstream, DownStream
 title: Upstream, DownStream
 authors: june
-tags: [hello, docusaurus]
+tags: [github, git]
 ---
 # Github의 upStream, downStream ?
 
