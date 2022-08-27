@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://SejuneOh.github.io/devlog/blog"/>
     <subtitle>Devlog Blog</subtitle>
-    <icon>https://SejuneOh.github.io/devlog/img/favicon.ico</icon>
+    <icon>https://SejuneOh.github.io/devlog/img/favicon.svg</icon>
     <entry>
         <title type="html"><![CDATA[Upstream, DownStream]]></title>
         <id>Upstream, DownStream</id>
