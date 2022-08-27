@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdevlog=self.webpackChunkdevlog||[]).push([[9222],{4905:e=>{e.exports=JSON.parse('{"permalink":"/SejunOh.github.io/blog/tags/facebook","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
