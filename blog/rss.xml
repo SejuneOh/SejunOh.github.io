@@ -9,7 +9,7 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
         <item>
-            <title><![CDATA[React-Router-Dom을 이용하여 화면 이동 및 Link 스타일하기]]></title>
+            <title><![CDATA[React-Router-Dom 활용 및 Link 태그 스타일하기]]></title>
             <link>https://SejuneOh.github.io/devlog/blog/React-Router-Dom</link>
             <guid>React-Router-Dom</guid>
             <pubDate>Tue, 31 May 2022 00:00:00 GMT</pubDate>
