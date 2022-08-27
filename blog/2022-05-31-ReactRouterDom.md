@@ -1,6 +1,6 @@
 ---
 slug: React-Router-Dom
-title: React-Router-Dom을 이용하여 화면 이동 및 Link 스타일하기
+title: React-Router-Dom 활용 및 Link 태그 스타일하기
 authors: june
 tags: [React, React-Router-Dom]
 ---
