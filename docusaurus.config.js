@@ -10,7 +10,7 @@ const config = {
   tagline: 'Simple is best',
   url: 'https://SejuneOh.github.io/',
   // baseUrl: '/SejunOh.github.io/',
-  baseUrl: '/',
+  baseUrl: '/devlog/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
