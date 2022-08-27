@@ -23,8 +23,8 @@
 <!-- -->여기서 upStream은 제가 만든 github의 remote(repo)를 말합니다. 그리고 down 스트림은 제가 작업하는 local환경이 됩니다.</p></li><li><p><em>협업에서 다른 사람의 프로젝트에서 Fork(상대방의 소스를 자신의 repo로)에서 작업할때</em>.<br>
 <!-- -->여기서는 upStream은 소스를 Fork해서 가져온 상대방의 원격 repo를 말하고, 자신의 관리하고 실행하는 repo및 환경을 downStream을 말합니다.</p></li></ol><p>두 가지의 차이점이 느껴지시나요?<br>
 <!-- -->전자는 하나로 소스를 관리하고, 후자는 다른 사람의 소스를 가져와 협업을 할 때, 소스를 개발하는 환경이 차이가 있었죠 upStream, downStream은 상대적으로 소스가 관리 되고있는 Main 환경을 upstream을 말하고, 그 외 소스가 개발되고 하위에서 개발되는 환경을 말합니다.</p><p>이해가 되셨을까요? 업로드, 다운로드의 개념 보다는 관리가 되고있는 환경의 상대적인 기준으로 나누어 표현합니다. 그래서 협업시에는 하위 downStream에서 main으로 소스를 관리하는 upStream 계정 브랜치를 나누어 소스를 업로드하는 개념의 branch와 개발 및 수정하는 branch를 나누어 역할을 정해서 사용합니다.</p><p>조금은 헷갈리는 개념이라 공유하고 싶어 이렇게 작성해서 포스트에 올리는데 많은 도움이 되었으면 좋겠습니다.</p>]]></content:encoded>
-            <category>hello</category>
-            <category>docusaurus</category>
+            <category>github</category>
+            <category>git</category>
         </item>
     </channel>
 </rss>

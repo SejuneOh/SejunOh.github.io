@@ -26,7 +26,7 @@
             <name>Sejune Oh</name>
             <uri>https://github.com/SejuneOh</uri>
         </author>
-        <category label="hello" term="hello"/>
-        <category label="docusaurus" term="docusaurus"/>
+        <category label="github" term="github"/>
+        <category label="git" term="git"/>
     </entry>
 </feed>
