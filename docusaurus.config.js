@@ -92,7 +92,7 @@ const config = {
             items: [
               {
                 label: 'Notion',
-                href: 'https://url.kr/9oartn',
+                href: 'https://bubble-music-b62.notion.site/540de38b81764f13b661ebe3e72621fb',
               },
               {
                 label: 'Gmail',
