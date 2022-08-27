@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Devlog',
-  tagline: 'Simple is best',
+  tagline: '개발 일지',
   url: 'https://SejuneOh.github.io/',
   // baseUrl: '/SejunOh.github.io/',
   baseUrl: '/devlog/',

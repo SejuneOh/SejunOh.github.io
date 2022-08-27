@@ -28,3 +28,43 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+
+.avatarContainer{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  
+}
+
+.mainAvatar {
+  width: 300px;
+  height: 300px;
+  background-image: url("/static/img/profile.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 150px;
+  border: 1px solid black;
+}
+
+.avatarName {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.moveToBlogBtn {
+  background-color: #ECEDF0;
+  margin-bottom: 4px;
+  font-size: 1.2rem;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+.blogLink{
+  color: #000;
+  font-weight: 700;
+}
