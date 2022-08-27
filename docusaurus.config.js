@@ -13,7 +13,7 @@ const config = {
   baseUrl: '/devlog/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
 
   // GitHub pages deployment config.
@@ -61,10 +61,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Devlog',
+        title: 'DEVLOG',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/devrant.svg',
         },
         items: [
           { to: '/blog', label: 'Blog', position: 'left' },
