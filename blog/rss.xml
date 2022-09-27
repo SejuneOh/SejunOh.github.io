@@ -4,10 +4,20 @@
         <title>Devlog Blog</title>
         <link>https://SejuneOh.github.io/devlog/blog</link>
         <description>Devlog Blog</description>
-        <lastBuildDate>Tue, 31 May 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 27 Sep 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[Flex에 대해서 알아보자]]></title>
+            <link>https://SejuneOh.github.io/devlog/blog/CSS,Flex</link>
+            <guid>CSS,Flex</guid>
+            <pubDate>Tue, 27 Sep 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[---]]></description>
+            <content:encoded><![CDATA[<hr><h1>Flex에 대해서 알아보자</h1>]]></content:encoded>
+            <category>CSS</category>
+            <category>FLEX</category>
+        </item>
         <item>
             <title><![CDATA[React-Router-Dom 활용 및 Link 태그 스타일하기]]></title>
             <link>https://SejuneOh.github.io/devlog/blog/React-Router-Dom</link>
