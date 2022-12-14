@@ -2,11 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://SejuneOh.github.io/devlog/blog</id>
     <title>Devlog Blog</title>
-    <updated>2022-11-03T00:00:00.000Z</updated>
+    <updated>2022-12-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://SejuneOh.github.io/devlog/blog"/>
     <subtitle>Devlog Blog</subtitle>
     <icon>https://SejuneOh.github.io/devlog/img/favicon.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[Internet 어떻게 동작하는가]]></title>
+        <id>internet</id>
+        <link href="https://SejuneOh.github.io/devlog/blog/internet"/>
+        <updated>2022-12-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How to work internet]]></summary>
+        <content type="html"><![CDATA[<hr><p>FE를 공부하면서 오랜만에 구글에 검색하여 개발 로드맵을 보았습니다.<br>
+<!-- -->개발 로드맵을 보면서 언어만 신경쓰고 있었는데, 가장 기본적인 원리인 인터넷과 브라우저에 대해서 정확하게 모르면 안될 것 같아 정리하는 글을 작성합니다.</p><h1>Internet?</h1><p>인터넷은 컴퓨터와 컴퓨터사이에 통신이 가능한 거대한 네트워크를 의미합니다.
+컴퓨터와 컴퓨터의 연결은 어떻게 이루어 질까요? </p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="어떻게-인터넷을-통해서-연결을-할까">어떻게 인터넷을 통해서 연결을 할까?<a class="hash-link" href="#어떻게-인터넷을-통해서-연결을-할까" title="제목으로 바로 가기">​</a></h2><p>인터넷을 통해서 컴퓨터와 컴퓨터를 연결하는 방식은 단순하게 정리할 수 있습니다.  </p><ul><li>이더넷</li><li>Wifi</li><li>Bluetooth</li></ul><p>단순히 컴퓨터와 컴퓨터를 연결하는 방식은 위와 같이 정리 할 수 있는데요,<br>
+<!-- -->하지만 저희가 사용하는 인터넷은 엄청난 수의 컴퓨터를 연결해야하는데 전자의 방식은 너무 많은 선과, 불필요한 소비가 생깁니다.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="라우터">라우터<a class="hash-link" href="#라우터" title="제목으로 바로 가기">​</a></h2><p>여기서 라우터는 컴퓨터의 단순한 연결 방식을 소형컴퓨터 라우터에 연결하여,<br>
+<!-- -->라우터는 출발지와 도착지를 정확하게 연결해주는 역할을 합니다. </p><p>라우터도 소형 컴퓨터이기 때문에 라우터 사이에서도 연결이 가능합니다.<br>
+<!-- -->하지만 라우터도 연결에 한계가 있습니다. 지역과 지역 사이가 멀어질 경우<br>
+<!-- -->연결하기 어려워 지죠, 그럼 어떤 해결 방법이 있을까요? </p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="전화케이블을-통한-인터넷-연결">전화케이블을 통한 인터넷 연결<a class="hash-link" href="#전화케이블을-통한-인터넷-연결" title="제목으로 바로 가기">​</a></h2><p>이미 전세계에 전화는 이미 다 연결이 되어있고, 배선도 많은 범위로 퍼져나가있습니다.  </p><p>여기서 모뎀을 통해서, 전화시설과 네트워크와 연결합니다.<br>
+<!-- -->모뎀은 우리 네트워크의 정보를 전화 시설에서 처리 할 수있는 정보로 바꾸며, 그 반대의 경우도 마찬가지입니다.</p><p>다음으로 네트워크에서 네트워크 사이로 메시지를 보내는 작업에서 ISP(Internet Service Provider)를 통해서 다른 네트워크에 연결하고 메시지를 보냅니다. 이렇게 거대한 네트워크와 네트워크가 연결 되어있는 것을
+인터넷 이라고 합니다.</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="네트워크라는-거대한-인프라에서-어떻게-컴퓨터를-찾을까">네트워크라는 거대한 인프라에서, 어떻게 컴퓨터를 찾을까?<a class="hash-link" href="#네트워크라는-거대한-인프라에서-어떻게-컴퓨터를-찾을까" title="제목으로 바로 가기">​</a></h3><p>컴퓨터 마다 ip 주소라는 고유한 번호를 가지고 있습니다.<br>
+<!-- -->이 번호를 찾아가서 메시지를 보내고 할 수 있습니다.<br>
+<!-- -->그리고 그 ip주소를 쉽게 찾을 수 있게 명명하는 것을 도와주는 것이 <em>도메인</em> 입니다. </p><p>이렇게 글을 정리하면서, 개념을 잡고 갈 수 있게 되었습니다.<br>
+<!-- -->깊게 파고들면 더 많은 지식이 있겠지만, 전반적인 이해를 돕는 글을 작성하려고했습니다. </p><p>감사합니다.</p><ul><li>참고 :
+<a href="https://developer.mozilla.org/ko/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank" rel="noopener noreferrer">MDN Web docs</a></li></ul>]]></content>
+        <author>
+            <name>Sejune Oh</name>
+            <uri>https://github.com/SejuneOh</uri>
+        </author>
+        <category label="internet" term="internet"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Compiler vs Interpreter]]></title>
         <id>compiler-interpreter</id>
