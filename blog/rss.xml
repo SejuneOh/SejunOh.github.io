@@ -9,6 +9,21 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
         <item>
+            <title><![CDATA[Browser는 어떻게 동작하는가]]></title>
+            <link>https://SejuneOh.github.io/devlog/blog/Browser</link>
+            <guid>Browser</guid>
+            <pubDate>Wed, 14 Dec 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[---]]></description>
+            <content:encoded><![CDATA[<hr><p>Web App에서 브라우저는 어떻게 동작하는 기본적인 원리를 정리하기 위해서 작성합니다.</p><h1>Broswer는 어떻게 동작하는가?</h1><h2 class="anchor anchorWithStickyNavbar_LWe7" id="broswer란">Broswer란?<a class="hash-link" href="#broswer란" title="제목으로 바로 가기">​</a></h2><p>Browser란 웹 페이지, 이미지, 비디오등 컨텐츠를 수신하고 전송하는 소프트웨어를 말한다.<br>
+<!-- -->우리가 크롬, 사파리, firefox 등.. 사용하는 소프트웨어가 브라우저다.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="browser의-기본-구조">Browser의 기본 구조<a class="hash-link" href="#browser의-기본-구조" title="제목으로 바로 가기">​</a></h2><ul><li>사용자 인터페이스 : 요청하는 페이지 창을 제외한 사용자가 사용하는 인터페이스를 말한다.</li><li>브라우저 엔진 : 사용자 인터페이스와 렌더링 엔진 사이에서 동작을 제어한다.</li><li>렌더링 엔진 : 요청한 컨텐츠를 표시한다.</li><li>통신 : HTTP 통신 및 네트워크 호출에 사용한다.</li><li>UI 백엔드 : 기본적인 장치의 그림을 그리는데 사용한다.</li><li>Javscript 해석기 : 자바스크립트를 해석하고 실행한다.</li><li>자료 저장소 : 브라우저에 데이터를 저장하는데 사용한다. </li></ul><p><strong>info</strong> : 크롬 브라우저는 각 탭이 렌더링 인스턴스를 유지한다. 즉, 각 탭에서는 독립적인 프로세스 진행한다.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="rendering-engine-동작-과정">Rendering engine 동작 과정<a class="hash-link" href="#rendering-engine-동작-과정" title="제목으로 바로 가기">​</a></h2><p>렌더링 엔진의 시작은, 요청에 의한 문서 내용을 얻는 것 부터 시작하며,<br>
+<!-- -->기본적으로 8kb 단위로 전송한다.</p><div class="language-txt codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-txt codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">* 기본적인 동작 </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">DOM 트리 구축을위한 html 파싱 -&gt; 렌더트리 구축 -&gt; 렌더트리 배치 -&gt; 렌더트리 그리기</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><ol><li>렌더링 엔진은 HTML문서를 파싱한다. </li><li>콘텐츠 트리 내부에서 DOM 노드로 변환</li><li>외부 CSS 요소 파싱 후 렌더 트리 생성 </li><li>UI 백엔드가 랜더 트리를 순회하면서 구현</li></ol><p>위와 같은 순서로 html, css 문서를 DOM 노드를 통해서 구현하게 된다.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="parsing-dom-트리-구축">Parsing DOM 트리 구축<a class="hash-link" href="#parsing-dom-트리-구축" title="제목으로 바로 가기">​</a></h2><p>Parsing은 소프트웨어가 인식 할 수 있는 형태의 구조로 변환하는 작업을 말한다.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="documnet-parsing">Documnet Parsing<a class="hash-link" href="#documnet-parsing" title="제목으로 바로 가기">​</a></h3><p>문서 코드 html, css등 돔에서 이해할 수 있는 구성의 코드를 노드로 변환해서 구성하게 됩니다. </p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="html-parser">HTML Parser<a class="hash-link" href="#html-parser" title="제목으로 바로 가기">​</a></h3><ol><li>HTML 문서의 마크업을 Parsing Tree로 구현합니다.</li><li>HTML의 문법은 W3C에서 정의한 내용을 따라 변환합니다. </li></ol><p>이렇게 HTML을 연산하여, 노드로 구현하고 문서의 최상위 노드를 DOM이 됩니다.
+즉, DOM은 문서의 대한 내용을 가지고이 있는 연결지점 입니다. </p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="토큰-알고리즘">토큰 알고리즘<a class="hash-link" href="#토큰-알고리즘" title="제목으로 바로 가기">​</a></h3><p>태그의 시작과 끝에 대한 html 토큰을 발행하여, 토큰이 태그의 시작과 끝을
+읽어들여 현재의 자료 상태를 바꿔가면서 태그를 읽고 토큰을 읽어 발행한다.
+토큰이 생성하면, 해당요소를 붙여 표현한다.</p><p>위와 같이 HTML, CSS가 렌더링 중, Javascipt를 만나게 되면, Javasciprt 엔진이 권한을 받아 js 파일을 다운로 및 실행을 하게 된다.</p><p>이렇게 화면의 구조와 표현, 동작을 표시하면서 브라우저의 웹화면을 보여주게 된다.</p>]]></content:encoded>
+            <category>Browser</category>
+            <category>basic</category>
+        </item>
+        <item>
             <title><![CDATA[Internet 어떻게 동작하는가]]></title>
             <link>https://SejuneOh.github.io/devlog/blog/internet</link>
             <guid>internet</guid>
