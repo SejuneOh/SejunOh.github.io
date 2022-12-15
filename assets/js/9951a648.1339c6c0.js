@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdevlog=self.webpackChunkdevlog||[]).push([[7589],{9111:e=>{e.exports=JSON.parse('{"label":"React-Hook","permalink":"/devlog/blog/tags/react-hook","allTagsPath":"/devlog/blog/tags","count":1}')}}]);
