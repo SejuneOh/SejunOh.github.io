@@ -12,7 +12,7 @@ React Hook에 대해서 정확한 개념을 확실히 잡을 수 있는 취지�
 
 # ReactHook 이란? 
 
-ReactHook은 과거 React에서의 clas로 LifeCylce을 관리할 때의 단점을 보안하기 위한 React의 개발 함수입니다.  
+ReactHook은 과거 React에서의 class로 LifeCylce을 관리할 때의 단점을 보안하기 위한 React의 개발 함수입니다.  
 즉, React의 상태(state) 생명주기를 연동 할 수 있게 해주는 함수입니다. 
 
 
@@ -25,7 +25,19 @@ ReactHook은 과거 React에서의 clas로 LifeCylce을 관리할 때의 단점�
 
 ## Hook의 규칙 
 - 최상위 레벨에서만 hook을 요청할 수 있습니다.(반복문이나, 조건문 중첩된 함수에서 호출 할 수 없습니다.)
-- React 함수 컴포넌트에서만 hook을 호출 해야합니다. 단, customHook에서는 호출 할 수 있습니다.
+- React 함수 컴포넌트에서만 hook을 호출 해야합니다. 단, customHook 안에서는 호출 할 수 있습니다.
+
+
+### useState
+useState는 상태 값을 저장하는 변수로 사용하는 hook입니다. 
+state값을 직접 할 당 할 수 없고, useState에 같이 선언된 함수를 통해서  
+수정할 수 있습니다.
+
+- props와 같이 변동사항이 생길 때, 다시 리렌더링 됩니다.
+
+```js
+const [count, setCount] = useState(0);
+```
 
 
 ### Effect Hook 
