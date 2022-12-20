@@ -12,8 +12,9 @@ React Hook에 대해서 정확한 개념을 확실히 잡을 수 있는 취지�
 
 # ReactHook 이란? 
 
-ReactHook은 과거 React에서의 class로 LifeCylce을 관리할 때의 단점을 보안하기 위한 React의 개발 함수입니다.  
-즉, React의 상태(state) 생명주기를 연동 할 수 있게 해주는 함수입니다. 
+ReactHook은 과거 React class type에서 Lifecyle을 함수형 컴포넌트에서도 사용하기 위한 방법에서 나왔습니다.  
+컴포넌트 사이에 로직 재활용이 어려운 상황을 보안하기 위한 함수입니다.  
+개층의 변화없이 상태 관련 로직을 재활용 할 수 있게 도와주는 함수입니다.  
 
 
 ## Hook의 종류
@@ -22,6 +23,7 @@ ReactHook은 과거 React에서의 class로 LifeCylce을 관리할 때의 단점
 - useContext
 - useReducer
 - useCallBack
+- useTransition
 
 ## Hook의 규칙 
 - 최상위 레벨에서만 hook을 요청할 수 있습니다.(반복문이나, 조건문 중첩된 함수에서 호출 할 수 없습니다.)
@@ -30,8 +32,7 @@ ReactHook은 과거 React에서의 class로 LifeCylce을 관리할 때의 단점
 
 ### useState
 useState는 상태 값을 저장하는 변수로 사용하는 hook입니다. 
-state값을 직접 할 당 할 수 없고, useState에 같이 선언된 함수를 통해서  
-수정할 수 있습니다.
+state값을 직접 할 당 할 수 없고, useState에 같이 선언된 함수를 통해서 수정할 수 있습니다.
 
 - props와 같이 변동사항이 생길 때, 다시 리렌더링 됩니다.
 
@@ -40,7 +41,7 @@ const [count, setCount] = useState(0);
 ```
 
 
-### Effect Hook 
+### useEffect
 Effect의 훅의 정의는 데이터를 가져오거나 상태값에 따른 부수효과(side-effect)를 정의할 수 있도록 하는 hook 입니다.  
 React class의 componentDidMount, componentDidUpdate,componentWillUnmount의 같은 목적으로 만든 hook입니다.  
 
@@ -48,6 +49,9 @@ React class의 componentDidMount, componentDidUpdate,componentWillUnmount의 같
 - EffectHook은 DOM에서 렌더링 이후에 호출 됩니다.
 - EffectHook은 return을 통해서 해제 할 수 있습니다.
 - 여러개의 effect hook을 가질 수 있습니다.(상태값에 따른 side Effect를 정의 할 수 있습니다.)
+- useEffect Hook은 lifeCycle을 대신해서, 사용하는 Hook이 아닙니다.
+  - 부수효과, 혹은 동기화 작업을 진행하는 부분입니다.
+  - 컴포넌트의 데이터의 동기화가 아닌 적용, 변화에 따른 내용은 useMemo, useCallBack을 사용해서 작성해야 합니다.
 
 
 ### useContext
@@ -137,6 +141,15 @@ function TextInputWithFocusButton() {
   );
 }
 ```
+
+### useTransition
+
+```js
+const [isLoading, LoadingCallback] = useTransition()
+```
+
+- 상태값이 변화하는 동안에, 상태와 함수를 설정합니다.
+- 데이터 Fetching, api 중 안정적인 data 상태를 리턴합니다.
 
 ---
 지금 까지 대표적인 React Hook을 알아봤습니다.  
