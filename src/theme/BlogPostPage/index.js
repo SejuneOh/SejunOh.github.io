@@ -29,6 +29,7 @@ function BlogPostPageContent({ sidebar, children }) {
         ) : undefined
       }>
       <BlogPostItem>{children}</BlogPostItem>
+      <Comment />
 
       {(nextItem || prevItem) && (
         <BlogPostPaginator nextItem={nextItem} prevItem={prevItem} />
@@ -52,7 +53,6 @@ export default function BlogPostPage(props) {
           </BlogPostPageContent>
         </HtmlClassNameProvider>
       </BlogPostProvider>
-      <Comment />
     </>
 
   );
