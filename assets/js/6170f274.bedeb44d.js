@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdevlog=self.webpackChunkdevlog||[]).push([[4410],{2203:e=>{e.exports=JSON.parse('{"label":"Typescript","permalink":"/devlog/blog/tags/typescript","allTagsPath":"/devlog/blog/tags","count":1}')}}]);
