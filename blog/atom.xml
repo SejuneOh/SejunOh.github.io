@@ -9,8 +9,8 @@
     <icon>https://SejuneOh.github.io/devlog/img/favicon.svg</icon>
     <entry>
         <title type="html"><![CDATA[CustomHook]]></title>
-        <id>/2022/12/21/ CustomHook</id>
-        <link href="https://SejuneOh.github.io/devlog/blog/2022/12/21/ CustomHook"/>
+        <id>/2022/12/21/CustomHook</id>
+        <link href="https://SejuneOh.github.io/devlog/blog/2022/12/21/CustomHook"/>
         <updated>2022-12-21T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[How to use CustomHook]]></summary>
         <content type="html"><![CDATA[<hr><p>Typescirpt와 React로 프로젝트를 진행하면서 반복적으로 useEffect, useState를 사용하는 코드를 봤습니다.<br>

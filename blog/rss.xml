@@ -10,8 +10,8 @@
         <language>ko</language>
         <item>
             <title><![CDATA[CustomHook]]></title>
-            <link>https://SejuneOh.github.io/devlog/blog/2022/12/21/ CustomHook</link>
-            <guid>/2022/12/21/ CustomHook</guid>
+            <link>https://SejuneOh.github.io/devlog/blog/2022/12/21/CustomHook</link>
+            <guid>/2022/12/21/CustomHook</guid>
             <pubDate>Wed, 21 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[How to use CustomHook]]></description>
             <content:encoded><![CDATA[<hr><p>Typescirpt와 React로 프로젝트를 진행하면서 반복적으로 useEffect, useState를 사용하는 코드를 봤습니다.<br>
