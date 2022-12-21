@@ -66,6 +66,7 @@ const config = {
         logo: {
           alt: 'My Site Logo',
           src: 'img/devrant.svg',
+          srcDark: 'img/devrant_light.svg'
         },
         items: [
           { to: '/blog', label: 'Blog', position: 'left' },
